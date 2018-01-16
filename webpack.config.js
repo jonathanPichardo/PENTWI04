@@ -15,5 +15,10 @@ module.exports = {
             loader: 'babel-loader',
             exclude: /(node_modules)/
         }]
+    },
+    devServer: {
+        port: 9293,
+        contentBase: path.resolve(__dirname, 'dist'),
+        inline: true
     }
 }
